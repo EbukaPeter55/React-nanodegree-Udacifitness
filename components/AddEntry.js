@@ -80,6 +80,14 @@ export  default  class AddEntry extends Component {
 
         //Clean local notification
     }
+    reset = () => {
+        const key = timeToString()
+        //Update Redux
+
+        //Route to Home
+
+        //Update 'DB
+    }
 
     render() {
         const metaInfo = getMetricMetaInfo();
@@ -91,7 +99,9 @@ export  default  class AddEntry extends Component {
                     size={100}/>
                 <Text>You already logged your information for today</Text>
                 {/* Reset */}
-
+                <TextButton onPress={this.reset  }>
+                    Reset
+                </TextButton>
                 </View>
 
             )
